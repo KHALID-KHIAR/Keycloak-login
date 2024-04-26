@@ -24,9 +24,9 @@ export class AuthKeyclockguard extends KeycloakAuthGuard {
           this.router.navigate(["/"])
  
           // if the user try to access a guarded route it redirects it to keycloak login
-          await this.keycloak.login({
-            redirectUri: window.location.origin + state.url,
-          });
+          // await this.keycloak.login({
+          //   redirectUri: window.location.origin + state.url,
+          // });
           return false ;
         }
         return true ;

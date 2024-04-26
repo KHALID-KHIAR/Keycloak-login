@@ -9,7 +9,7 @@ import { KeycloakService } from 'keycloak-angular';
 export class ProtectedComponent {
   constructor(private keyclock:KeycloakService){}
 loggout() {
-this.keyclock.logout("http://localhost:4200").then() ;
+this.keyclock.logout("http://localhost:4500").then() ;
 }
 
 }

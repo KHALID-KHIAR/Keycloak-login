@@ -18,11 +18,11 @@ export class AuthService {
     });
   }
   public logout(): void {
-    this.keycloak.logout("http://localhost:4200/").then();
+    this.keycloak.logout("http://localhost:4500/").then();
   }
 
   login() {
-    this.keycloak.login({redirectUri: "http://localhost:4200/protected"}).then();
+    this.keycloak.login({redirectUri: "http://localhost:4500/protected"}).then();
   }
 
 

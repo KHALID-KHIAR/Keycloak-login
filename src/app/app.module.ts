@@ -13,8 +13,8 @@ function initializeKeycloak(keycloak: KeycloakService) {
     keycloak.init({
       config: {
         url: 'http://localhost:8080',
-        realm: 'cock-pite-server-side',
-        clientId: 'login-keycloack'
+        realm: 'Testing-realm',
+        clientId: 'testing-client'
       },
       initOptions: {
         onLoad: 'check-sso'
